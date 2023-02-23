@@ -19,6 +19,7 @@ log into MySql and source the db/schema.sql file
 Run the command "NPM Start" to initialize the app
 
 ## Credits
+
 Frequently referenced the sequelize docs
 https://sequelize.org/docs/v6/
 
