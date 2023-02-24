@@ -18,6 +18,7 @@ body {
   border: 1px solid black;
   margin: 5px;
   background-color: #b99b57;
+  border-radius: 10px;
 }
 
 #desc {
@@ -45,8 +46,30 @@ body {
 }
 
 #post {
-  border: solid, 1px, #ccc;
+  border: solid 1px #020000;
   background-color: #f9c951;
   padding: 10px;
   margin: 10px 0;
+  border-radius: 10px;
+}
+
+#comments {
+  font-size: larger;
+  border: solid 1px black;
+  background-color: #f9c951;
+  border-radius: 10px;
+}
+
+#one-comm {
+  border: solid 1px black;
+  background-color: #f0af0d;
+  text-align: center;
+  border-radius: 10px;
+  margin: 5px;
+}
+#desc {
+  border: solid 1px black;
+  background-color: #f8d681;
+  text-align: center;
+  border-radius: 10px;
 }

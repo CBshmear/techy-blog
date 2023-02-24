@@ -2,4 +2,25 @@
   <h2 id="title">{{name}}</h2>
   <p id="desc">{{description}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
+  <!-- Add a new comment -->
+  <form id="add-comment" action="/api/comments" data-id="{{post_id}}" class ="new-comment-form" method="POST">
+    <div class="form-group">
+      <label for="comment">Comment</label>
+      <textarea class="form-control" name="description" id="comment" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" id="comm-butt">Submit</button>
 </div>
+<div>
+  
+  <h3>Comments</h3>
+  <ul id="comments">
+    {{#each comments as  |comment|}}
+      <li id="one-comm">
+        <p id="desc">{{comment.description}}</p>
+        <p>Posted by {{user.name}} on {{format_date date_created}}</p>
+      </li>
+    {{/each}}
+  </ul>
+ 
+</div>
+<script src="../js/comment.js"></script>
