@@ -29,6 +29,7 @@ body {
 
 #single-post {
   border: 1px solid black;
+  border-radius: 10px;
 }
 .no-button {
   background: none;
